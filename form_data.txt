@@ -1,0 +1,20 @@
+Student Name: sindhu m
+SATS No.: 123456
+DOB: 2025-01-02
+Gender: Female
+Category: obc
+Address: chowdeshwari layout marathahalli banglore -560037
+Class: Btech-3rd year
+Institution: CMR Institute of technology
+Photo Path: uploads/logo.jpg
+----------------------------------------
+Student Name: narendra modi
+SATS No.: 20258222
+DOB: 2018-01-30
+Gender: Male
+Category: obc
+Address: chowdeshwari layout,Marathahalli,Banglore-560037
+Class: Btech-3rd year
+Institution: CMR Institute of technology
+Photo Path: uploads/n1.png
+----------------------------------------

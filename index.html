@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMTC Student Bus Pass Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #7149ac;
+        }
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, p {
+            text-align: center;
+            margin: 5px 0;
+        }
+        h1 { font-size: 22px; text-transform: uppercase; }
+        h2 { font-size: 18px; }
+        .form-group {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 60%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #164a82;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #896184;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BANGALORE METROPOLITAN TRANSPORT CORPORATION</h1>
+        <h2>(Students Bus Pass Application)</h2>
+        <p>To be filled in Block letters</p>
+        <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="photo">Affix Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="satsNo">SATS No.:</label>
+                <input type="text" id="satsNo" name="satsNo" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" placeholder="GM/Other (OBC)/SC/ST">
+            </div>
+            <div class="form-group">
+                <label for="address">Residential Address:</label>
+                <textarea id="address" name="address" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class">
+            </div>
+            <div class="form-group">
+                <label for="institution">Educational Institution:</label>
+                <input type="text" id="institution" name="institution">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
